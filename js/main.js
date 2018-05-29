@@ -1,5 +1,4 @@
 $( document ).ready(function() {
-	document.getElementById("tune").play();
 	var state = {};
 	$("#main-page").load("home.txt");
 });
