@@ -16,16 +16,16 @@
             </div>
           </div>
         </div>
-        <div style="position: absolute;bottom:0;left: 50%;-webkit-transform: translateX(-50%);transform: translateX(-50%);">
+        <div id="centered-nav">
             <ul id="home-navigation">
-                <a href="/shop" id="shop-tab"><li>shop</li></a>
+                <a href="/royblair/shop" id="shop-tab"><li>shop</li></a>
                 <a id="shows-tab"><li>shows</li></a>
                 <a id="music-tab"><li>music</li></a>
                 <a id="credits-tab" href="/credits"><li style="margin-right:0px;">credits</li></a>
               </ul>
         </div>
         <div style="position: absolute;top:0;right:0;">
-          <a href="/"><img style="width: 85px;margin: 25px;" src="img/ch-logo.png" /></a>
+          <img style="width: 60px;margin: 27px;" src="img/ch-logo.png" />
         </div>
       </div>
     </div>

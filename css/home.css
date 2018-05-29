@@ -1,5 +1,5 @@
 #links{
-   margin-left: -100px; 
+   margin-left: -90px; 
 }
 #links img{
     width: 24px;
@@ -13,9 +13,8 @@
 
 li{
   color: #fff;
-  font-weight: 500;
+  font-weight: 400;
   text-align: right;
-  font-size: 1.2em;
   height: 18px;
 }
 
@@ -55,11 +54,18 @@ a:hover{
 }
 
 #home-navigation{
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 #home-navigation a li{
   display: inline;
-  margin-right: 62px;
+}
+
+#centered-nav{
+  position: absolute;
+  bottom:0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 
@@ -73,6 +79,15 @@ a:hover{
     flex: 0 0 82.4% !important;
     max-width: 82.4% !important;
   }
+  li{
+    font-size: 1em;
+  }
+  #home-navigation a li{
+    margin-right: 33px;
+  }
+  #centered-nav{
+    width: 285.2px;
+  }
 }
 
 @media(min-width: 450px){
@@ -84,6 +99,19 @@ a:hover{
     -ms-flex: 0 0 71.666667% !important;
     flex: 0 0 71.666667% !important;
     max-width: 71.666667% !important;
+  }
+}
+
+@media(min-width: 500px){
+  li{
+    font-size: 1.2em;
+  }
+
+  #home-navigation a li{
+    margin-right: 38px;
+  }
+  #centered-nav{
+    width: 334.7px;
   }
 }
 
