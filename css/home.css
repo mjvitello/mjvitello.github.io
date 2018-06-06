@@ -63,9 +63,18 @@ a:hover{
 #centered-nav{
   position: absolute;
   bottom:0;
-  left: 50%;
+  left: 51.5%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+}
+
+#center-title{
+  position: absolute;
+  top: 49%;left: 52.3%;
+}
+.container.h-100 > #center-title{
+  transform: translate(-50%, -50%);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1, M12=0, M21=0, M22=1, SizingMethod='auto expand')";
 }
 
 
@@ -78,6 +87,9 @@ a:hover{
     -ms-flex: 0 0 82.4% !important;
     flex: 0 0 82.4% !important;
     max-width: 82.4% !important;
+  }
+  #center-title p{
+    font-size:1.8em;
   }
   li{
     font-size: 1em;
@@ -103,6 +115,9 @@ a:hover{
 }
 
 @media(min-width: 500px){
+  #center-title p{
+    font-size:2.3em;
+  }
   li{
     font-size: 1.2em;
   }
