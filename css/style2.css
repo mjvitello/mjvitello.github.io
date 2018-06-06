@@ -118,17 +118,17 @@ a{
         margin-right: 6px;
     }
     .vid{
-        margin-top: -70px;
+        margin-top: -30px;
     }
 }
 
 @media (min-width: 351px){
     .social{
-        font-size: 8.5px;
+        font-size: 8.4px;
         padding-right:25px;
     }
     .credits-block p{
-        font-size: 8.5px;
+        font-size: 8.4px;
     }
     #links img {
         width: 15px;
