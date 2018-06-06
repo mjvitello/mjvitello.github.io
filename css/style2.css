@@ -15,12 +15,6 @@ a{
 #links{
     float:right;
 }
-#links img {
-    width: 19px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
 .credits-block p{
     margin-bottom: 5px !important;
     letter-spacing: 1px;
@@ -76,11 +70,11 @@ a{
 
 @media (min-width: 0px){
     .social{
-        font-size: 6px;
-        padding-right:10px;
+        font-size: 8px;
+        padding-right: 18px;
     }
     .credits-block p{
-        font-size: 6px;
+        font-size: 8px;
     }
 
     #link-wrap{
@@ -110,37 +104,42 @@ a{
     #perfume-img{
         width: 100px;
     }
-}
-@media (min-width: 325px){
-    .social{
-        font-size: 7px;
-        padding-right:15px;
+    #links{
+        margin: 0 auto;
+        padding-top: 5px;
+        display: inherit;
     }
-    .credits-block p{
-        font-size: 7px;
+    #social-row{
+        display: inherit;
+    }
+    #links img{
+        width: 15px;
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+    .vid{
+        margin-top: -70px;
     }
 }
 
 @media (min-width: 351px){
     .social{
-        padding-right:20px;
-    }
-}
-
-@media (min-width: 370px){
-    .social{
-        font-size: 7.3px;
-        padding-right:20px;
+        font-size: 8.5px;
+        padding-right:25px;
     }
     .credits-block p{
-        font-size: 7.3px;
+        font-size: 8.5px;
+    }
+    #links img {
+        width: 15px;
+        margin-left: 8px;
+        margin-right: 8px;
     }
 }
 
+
 @media (min-width: 395px){
-    .social{
-        padding-right:20px;
-    }
+
     .vid iframe, .credits-block{
         width: 288px;
         height: 162px;
@@ -150,11 +149,12 @@ a{
         left: -46px;
         width: 53%;
     }
-}
-
-@media (min-width: 425px){
     .social{
-        padding-right:24px;
+        font-size: 11px;
+        padding-right: 30px;
+    }
+    .credits-block p{
+        font-size: 11px;
     }
 }
 
@@ -174,7 +174,7 @@ a{
         font-size: 10px;
     }
     .col-md-6.order-sm-2.order-md-1{
-        padding-left:inherit;
+        padding-left:15px;
     }
     .vid iframe, .credits-block{
         width: 400px;
@@ -187,6 +187,14 @@ a{
     }
     #perfume-img{
         width: 150px;
+    }
+    #links img{
+        width: 16px;
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+    .vid{
+        margin-top: 0px;
     }
 }
 
@@ -216,11 +224,22 @@ a{
     #link-wrap{
         padding-top: 0px;
     }
+    #links{
+        float: right;
+    }
+    #social-row{
+        display: block
+    }
 }
 
 @media (min-width: 850px){
     .social, .credits-block p{
         font-size: 12px;
+    }
+    #links img{
+        width: 16px;
+        margin-left: 6px;
+        margin-right: 6px;
     }
 }
 
