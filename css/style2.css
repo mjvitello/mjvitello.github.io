@@ -116,7 +116,7 @@ button{
 
 @media (min-width: 0px){
     .social{
-        font-size: 8px;
+        font-size: 9.5px;
         padding-right: 18px;
     }
     .credits-block p{
@@ -159,9 +159,9 @@ button{
         display: inherit;
     }
     #links img{
-        width: 15px;
-        margin-left: 6px;
-        margin-right: 6px;
+        width: 16px;
+        margin-left: 8px;
+        margin-right: 8px;
         margin-top: 0px;
     }
     .vid{
@@ -171,16 +171,16 @@ button{
 
 @media (min-width: 351px){
     .social{
-        font-size: 8.4px;
+        font-size: 10px;
         padding-right:25px;
     }
     .credits-block p{
         font-size: 8.4px;
     }
     #links img {
-        width: 15px;
-        margin-left: 8px;
-        margin-right: 8px;
+        width: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 }
 
