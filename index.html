@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="css/style2.css">
   <link rel="icon" href="img/logo.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108381604-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -26,6 +25,35 @@
 </head>
 
 <body>
+  <div id="contactForm">
+    <div id="sign-me-up">
+      <div class="row" id="sign-up-title">
+        <div class="col-6" style="padding-left:0px; padding-right:0px;">
+          Email Sign Up
+        </div>
+        <div class="col-6" style="padding-left:0px; padding-right:0px;">
+          <div id="close-form">×</div>
+        </div>
+      </div>
+      <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net"
+      action="https://script.google.com/macros/s/AKfycbxqFP1nC3DE26jxOoHF1kfjnqhnLoo7UZZlxOI7/exec">
+      <fieldset class="pure-group">
+        <label for="email">Email Address *</label>
+        <input id="email" name="email" type="email" value=""
+        required style="width:100%" />
+        <span id="email-invalid" style="display:none">
+        Must be a valid email address</span>
+      </fieldset>
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;submit</button>
+      </form>
+
+      <!-- Customise the Thankyou Message People See when they submit the form: -->
+      <div style="display:none;" id="thankyou_message">
+        <p style="font-size: 15px">Thanks! You've been added to the mailing list</p>
+      </div>
+    </div>
+  </div>
   <div class="container-fluid h-100" style="padding: 0;">
     <div class="row" style="width: 100%;position: absolute;">
       <div class="col-12 align-self-start" id="title">
@@ -37,7 +65,8 @@
             <p class="social"><a href="/shop">SHOP</a></p>
             <p class="social"><a href="/shows">SHOWS</a></p>
             <p class="social"><a href="/music">MUSIC</a></p>
-            <p class="social" style="padding-right:0px;"><a href="/credits">CREDITS</a></p>
+            <p class="social"><a href="/credits">CREDITS</a></p>
+            <p class="social" id="contact" style="padding-right:0px;">SIGN UP</p>
           </div>
         </div>
          <div class ="col-md-6 order-sm-2 order-md-1" id="social-row">
@@ -78,9 +107,11 @@
 </div>
 
 <!--Javascript-->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+<script src="js/home.js"></script>
 <!--<script src="js/jquery.iframetracker.js"></script>-->
 </body>
 </html>
