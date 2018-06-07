@@ -80,7 +80,7 @@ a{
   color:rgba(240, 240, 240, 1);
   font-family: helvetica neue, arial !important;
   font-weight: bold;
-  text-transform: lowercase;
+  text-transform: uppercase;
   opacity: 0.95;
 }
 #sign-me-up { 
@@ -99,13 +99,13 @@ a{
 }
 
 #sign-up-title{
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.2em;
     padding-bottom: 35px !important;
 }
 
 label{
-    font-size: 14px;
+    font-size: 12px;
 }
 
 button{
@@ -113,11 +113,11 @@ button{
     color: rgba(240, 240, 240, 1);
     border: 2px solid rgba(240, 240, 240, 1);
     margin-top: 35px !important;
-    font-size: 18px !important;
     padding: 0.24em 1.5em;
     cursor: pointer;
     font-weight: bold;
-    font-size: 14px !important;
+    font-size: 12px !important;
+    text-transform: uppercase !important;
 }
 
 
