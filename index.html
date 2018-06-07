@@ -25,35 +25,6 @@
 </head>
 
 <body>
-  <div id="contactForm">
-    <div id="sign-me-up">
-      <div class="row" id="sign-up-title">
-        <div class="col-6" style="padding-left:0px; padding-right:0px;">
-          Email Sign Up
-        </div>
-        <div class="col-6" style="padding-left:0px; padding-right:0px;">
-          <div id="close-form">×</div>
-        </div>
-      </div>
-      <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net"
-      action="https://script.google.com/macros/s/AKfycbxqFP1nC3DE26jxOoHF1kfjnqhnLoo7UZZlxOI7/exec">
-      <fieldset class="pure-group">
-        <label for="email">Email Address *</label>
-        <input id="email" name="email" type="email" value=""
-        required style="width:100%" />
-        <span id="email-invalid" style="display:none">
-        Must be a valid email address</span>
-      </fieldset>
-      <button class="button-success pure-button button-xlarge">
-        <i class="fa fa-paper-plane"></i>&nbsp;submit</button>
-      </form>
-
-      <!-- Customise the Thankyou Message People See when they submit the form: -->
-      <div style="display:none;" id="thankyou_message">
-        <p style="font-size: 15px">Thanks! You've been added to the mailing list</p>
-      </div>
-    </div>
-  </div>
   <div class="container-fluid h-100" style="padding: 0;">
     <div class="row" style="width: 100%;position: absolute;">
       <div class="col-12 align-self-start" id="title">
@@ -65,8 +36,7 @@
             <p class="social"><a href="/shop">SHOP</a></p>
             <p class="social"><a href="/shows">SHOWS</a></p>
             <p class="social"><a href="/music">MUSIC</a></p>
-            <p class="social"><a href="/credits">CREDITS</a></p>
-            <p class="social" id="contact" style="padding-right:0px;">SIGN UP</p>
+            <p class="social" style="padding-right:0px;"><a href="/credits">CREDITS</a></p>
           </div>
         </div>
          <div class ="col-md-6 order-sm-2 order-md-1" id="social-row">
@@ -90,21 +60,52 @@
         <div class="credits-block" style="margin-top:80px; height: 100% !important;">
           <p class="bold">SONG CREDITS</p>
           <p>(R. BLAIR)</p>
-          <p>PRODUCTION BY JACK LOKEN & ROY BLAIR</p>
+          <p>PRODUCTION BY ENDER TOI & ROY BLAIR</p>
           <p>ADDITIONAL PRODUCTION BY FINN ORRELL</p>
-          <p>MIXED AND MASTERED BY BOB BROCKMANN</p>
+          <p>MIXED AND MASTERED BY BASSY BOB AT BIG BOTTOM MUSIC</p>
           <p style="padding-bottom: 80px;">PHOTOS BY CHRISTIAN LANZA</p>
         </div>
       </div>
     </div>
   </div>
+</div>
+  <div id="contactForm">
+    <div id="sign-me-up">
+      <div class="row" id="sign-up-title">
+        <div class="col-12" style="padding-left:0px; padding-right:0px;">
+          Email Sign Up
+        </div>
+        <!--<div class="col-6" style="padding-left:0px; padding-right:0px;">
+          <div id="close-form">×</div>
+        </div>-->
+      </div>
+      <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net"
+      action="https://script.google.com/macros/s/AKfycbxqFP1nC3DE26jxOoHF1kfjnqhnLoo7UZZlxOI7/exec">
+      <fieldset class="pure-group">
+        <div style="padding-bottom: 30px;">
+        <label for="city" style="width:79.3%;">City</label>
+        <label for="state" style="">State</label>
+        <input id="city" name="city" type="text" value=""
+         style="width:75%" />
+        <input id="state" name="state" type="text" value=""
+         style="width:20%;float:right;" />
+      </div>
+        <label for="email">Email Address *</label>
+        <input id="email" name="email" type="email" value=""
+        required style="width:100%" />
+        <span id="email-invalid" style="display:none">
+        Must be a valid email address</span>
+      </fieldset>
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;submit</button>
+      </form>
 
-  <div class="row justify-content-center">
-    <div class="align-self-center">
-
+      <!-- Customise the Thankyou Message People See when they submit the form: -->
+      <div style="display:none;" id="thankyou_message">
+        <p style="font-size: 15px">Thanks! You've been added to the mailing list</p>
+      </div>
     </div>
   </div>
-</div>
 
 <!--Javascript-->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>

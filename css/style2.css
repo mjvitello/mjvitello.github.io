@@ -71,20 +71,24 @@ a{
 
 
 #contactForm{
-  display: none;
+  display: block;
   height: 100%;
   width: 100%;
   z-index: 500000;
   position: absolute;
-  background-color: rgba(31, 33, 34, 0.8);
-  color:#fff;
+  background-color: transparent; /*rgba(31, 33, 34, 0.8);*/
+  color:rgba(240, 240, 240, 1);
+  font-family: helvetica neue, arial !important;
+  font-weight: bold;
+  text-transform: lowercase;
 }
 #sign-me-up { 
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  width: 305px;
+  width: 350px;
+  margin-bottom:80px;
 }
 #close-form{
     cursor: pointer;
@@ -94,9 +98,9 @@ a{
 }
 
 #sign-up-title{
-    font-size: 22px;
+    font-size: 24px;
     line-height: 1.2em;
-    padding-bottom: 60px !important;
+    padding-bottom: 30px !important;
 }
 
 label{
@@ -105,19 +109,20 @@ label{
 
 button{
     background-color: transparent;
-    color: #fff;
-    border: 2px solid #fff;
+    color: rgba(240, 240, 240, 1);
+    border: 2px solid rgba(240, 240, 240, 1);
     margin-top: 35px !important;
     font-size: 18px !important;
     padding: 0.2em 1.3em;
     cursor: pointer;
+    font-weight: bold;
 }
 
 
 @media (min-width: 0px){
     .social{
         font-size: 9.5px;
-        padding-right: 18px;
+        padding-right: 25px;
     }
     .credits-block p{
         font-size: 8px;
@@ -167,12 +172,15 @@ button{
     .vid{
         margin-top: -30px;
     }
+    #sign-me-up{
+        width: 280px;
+    }
 }
 
 @media (min-width: 351px){
     .social{
         font-size: 10px;
-        padding-right:25px;
+        padding-right:30px;
     }
     .credits-block p{
         font-size: 8.4px;
@@ -198,10 +206,16 @@ button{
     }
     .social{
         font-size: 11px;
-        padding-right: 30px;
+        padding-right: 35px;
     }
     .credits-block p{
         font-size: 11px;
+    }
+}
+
+@media (min-width: 420px){
+    #sign-me-up{
+        width: 350px;
     }
 }
 
