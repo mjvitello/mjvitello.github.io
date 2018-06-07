@@ -123,8 +123,8 @@ button{
 
 @media (min-width: 0px){
     .social{
-        font-size: 9.5px;
-        padding-right: 25px;
+        font-size: 10px;
+        padding-right: 28px;
     }
     .credits-block p{
         font-size: 8px;
@@ -181,8 +181,8 @@ button{
 
 @media (min-width: 351px){
     .social{
-        font-size: 10px;
-        padding-right:30px;
+        font-size: 11px;
+        padding-right: 33px;
     }
     .credits-block p{
         font-size: 8.4px;
@@ -207,7 +207,7 @@ button{
         width: 53%;
     }
     .social{
-        font-size: 11px;
+        font-size: 12px;
         padding-right: 35px;
     }
     .credits-block p{
