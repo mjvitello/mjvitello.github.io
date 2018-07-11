@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="title" content="ROY BLAIR">
-  <meta name="description" content="JANE off roy blair's debut album, Cat Heaven, coming soon">
+  <meta name="description" content="Cat Heaven out now">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta property="og:url"                content="http://royblair.com/" />
   <meta property="og:title"              content="ROY BLAIR" />
-  <meta property="og:description"        content="JANE off roy blair's debut album, Cat Heaven, coming soon"/>
+  <meta property="og:description"        content="Cat Heaven out now"/>
 
   <title>ROY BLAIR</title>
 
@@ -25,6 +25,45 @@
 </head>
 
 <body>
+  <div id="overlay"></div>
+  <div id="contactForm">
+    <div id="sign-me-up">
+      <div class="row" id="sign-up-title">
+        <div class="col-6" style="padding-left:0px; padding-right:0px;">
+          Email Sign Up
+        </div>
+        <div class="col-6" style="padding-left:0px; padding-right:0px;">
+          <div id="close-form">×</div>
+        </div>
+      </div>
+      <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net"
+      action="https://script.google.com/macros/s/AKfycbxqFP1nC3DE26jxOoHF1kfjnqhnLoo7UZZlxOI7/exec">
+      <fieldset class="pure-group">
+        <div style="padding-bottom: 25px;">
+        <label for="city" style="width:79.3%;">City</label>
+        <label for="state" style="">State</label>
+        <input id="city" name="city" type="text" value=""
+         style="width:75%" />
+        <input id="state" name="state" type="text" value=""
+         style="width:20%;float:right;" />
+      </div>
+        <label for="email">Email Address *</label>
+        <input id="email" name="email" type="email" value=""
+        required style="width:100%" />
+        <span id="email-invalid" style="display:none">
+        Must be a valid email address</span>
+      </fieldset>
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;submit</button>
+      </form>
+
+      <!-- Customise the Thankyou Message People See when they submit the form: -->
+      <div style="display:none;" id="thankyou_message">
+        <p style="font-size: 12px">Thanks! You've been added to the mailing list</p>
+      </div>
+    </div>
+  </div>
+
   <div class="container-fluid h-100" style="padding: 0;">
     <div class="row" style="width: 100%;position: absolute;">
       <div class="col-12 align-self-start" id="title">
@@ -69,44 +108,6 @@
     </div>
   </div>
 </div>
-  <div id="contactForm">
-    <div id="sign-me-up">
-      <div class="row" id="sign-up-title">
-        <div class="col-12" style="padding-left:0px; padding-right:0px;">
-          Email Sign Up
-        </div>
-        <!--<div class="col-6" style="padding-left:0px; padding-right:0px;">
-          <div id="close-form">×</div>
-        </div>-->
-      </div>
-      <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net"
-      action="https://script.google.com/macros/s/AKfycbxqFP1nC3DE26jxOoHF1kfjnqhnLoo7UZZlxOI7/exec">
-      <fieldset class="pure-group">
-        <div style="padding-bottom: 25px;">
-        <label for="city" style="width:79.3%;">City</label>
-        <label for="state" style="">State</label>
-        <input id="city" name="city" type="text" value=""
-         style="width:75%" />
-        <input id="state" name="state" type="text" value=""
-         style="width:20%;float:right;" />
-      </div>
-        <label for="email">Email Address *</label>
-        <input id="email" name="email" type="email" value=""
-        required style="width:100%" />
-        <span id="email-invalid" style="display:none">
-        Must be a valid email address</span>
-      </fieldset>
-      <button class="button-success pure-button button-xlarge">
-        <i class="fa fa-paper-plane"></i>&nbsp;submit</button>
-      </form>
-
-      <!-- Customise the Thankyou Message People See when they submit the form: -->
-      <div style="display:none;" id="thankyou_message">
-        <p style="font-size: 12px">Thanks! You've been added to the mailing list</p>
-      </div>
-    </div>
-  </div>
-
 <!--Javascript-->
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
