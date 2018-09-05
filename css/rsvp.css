@@ -51,11 +51,13 @@ p{
 
 #enter-site{
   position: absolute;
-  color:rgba(240, 240, 240, 1);
-  font-size: 12px;
+  color:rgba(240, 240, 240, 1) !important;
+  font-size: 13px;
+  font-weight: 500;
   top: 0;
   right:0;
   padding:10px 15px 10px 15px;
+  font-family: "helvetica neue", arial;
 }
 
 label{
