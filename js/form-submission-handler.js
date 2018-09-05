@@ -63,7 +63,7 @@ function getFormData() {
 }
 
 $( "#gform" ).submit(function( event ) {
-  $("#gform").hide();
+  $(this).hide();
 });
 
 function handleFormSubmit(event) {  // handles form submit withtout any jquery
