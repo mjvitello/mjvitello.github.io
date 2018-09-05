@@ -12,7 +12,6 @@ a{
 p{
   color:rgba(240, 240, 240, 1);
 }
-
 #happyPoster{
   width:350px; 
   height:350px;
@@ -58,6 +57,11 @@ p{
   right:0;
   padding:10px 15px 10px 15px;
   font-family: "helvetica neue", arial;
+}
+
+.row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 
 label{
