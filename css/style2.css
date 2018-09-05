@@ -68,16 +68,7 @@ a{
     display: inherit; 
 }
 
-#overlay{
-    height: 130%;
-    background-color: rgba(31, 33, 34, 0.8);
-    width: 100%;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    z-index: 400;
-    overflow: hidden;
-}
+
 
 #contactForm{
   display: block;
@@ -91,8 +82,6 @@ a{
   font-weight: bold;
   text-transform: uppercase;
   opacity: 0.95;
-  /*background-color: rgba(31, 33, 34, 0.8);*/
-  color:white;
 }
 #sign-me-up { 
   position: absolute;
@@ -105,14 +94,14 @@ a{
 #close-form{
     cursor: pointer;
     float:right;
-    font-size: 34px;
-    line-height: 11px;
+    font-size: 26px;
+    line-height: 26px
 }
 
 #sign-up-title{
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.2em;
-    padding-bottom: 45px !important;
+    padding-bottom: 35px !important;
 }
 
 label{
