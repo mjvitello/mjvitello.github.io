@@ -8,16 +8,6 @@
 	text-decoration: underline !important;
 }
 
-#flyers img{
-	width:78%;
-	height:78%;
-}
-
-#flyers-m img{
-	width:60%;
-	height:75%;
-}
-
 #tix{
 	margin-top: 50px;
 }
@@ -34,9 +24,33 @@
 	margin-top:87px;
 }
 
-#sign-up{
-	
+#mlb2-1047248.ml-form-embedContainer{
+	max-width: 88% !important;
+	padding-top: 40px;
 }
-#sign-up > div{
-	width:350px;
+
+.ml-form-embedWrapper .ml-form-embedBody .ml-form-embedSubmit{
+	margin-top: -30px !important;
+}
+
+
+@media(min-width: 0px){
+	#flyers img {
+	    width: 280px;
+	    height: 100%;
+	}
+}
+
+@media(min-width: 420px){
+	#flyers img {
+	    width: 400px;
+	    height: 100%;
+	}
+}
+
+@media(min-width: 768px){
+	#flyers img {
+	    width: 420px;
+	    height: 100%;
+	}
 }
