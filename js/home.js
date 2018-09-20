@@ -1,11 +1,3 @@
-$(document).on("click", '#contact', function(event) { 
-	$('#contactForm').fadeIn("fast");
-});
-
-$(document).on("click", '#close-form', function(event) { 
-	$('#contactForm').fadeOut("fast");
-});
-
 $( document ).ready(function() {
     var height = $( window ).height();
  	var width = $( window ).width();
@@ -19,16 +11,13 @@ $( document ).ready(function() {
  		$("#sign-me-up").css("margin-top", pad);
  	}
   	else if(width >= 580){
-   		var pad = 665 - (height);
- 		$("#sign-me-up").css("margin-top", pad);
+ 		$("#sign-me-up").css("margin-top", "inherit");
  	}
    	else if(width >= 395){
-  		var pad = 586 - (height);
- 		$("#sign-me-up").css("margin-top", pad);		
+ 		$("#sign-me-up").css("margin-top", "inherit");		
  	}
    	else if(width >= 320){
-  		var pad = 525 - (height);
- 		$("#sign-me-up").css("margin-top", pad);	
+ 		$("#sign-me-up").css("margin-top", "inherit");	
  	}
 });
 
@@ -45,16 +34,13 @@ $( window ).resize(function() {
   		var pad = 764 - (height*1.05);
  		$("#sign-me-up").css("margin-top", pad);
  	}
-  	else if(width >= 580){
-   		var pad = 665 - (height);
- 		$("#sign-me-up").css("margin-top", pad);
- 	}
-   	else if(width >= 395){
-  		var pad = 586 - (height);
- 		$("#sign-me-up").css("margin-top", pad);		
- 	}
-   	else if(width >= 320){
-  		var pad = 525 - (height);
- 		$("#sign-me-up").css("margin-top", pad);	
- 	}
-}
+  else if(width >= 580){
+    $("#sign-me-up").css("margin-top", "inherit");
+  }
+  else if(width >= 395){
+    $("#sign-me-up").css("margin-top", "inherit");    
+  }
+  else if(width >= 320){
+    $("#sign-me-up").css("margin-top", "inherit");  
+  }
+});
