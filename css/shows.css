@@ -42,7 +42,7 @@
 
 @media(min-width: 0px){
 	#flyers img {
-	    width: 280px;
+	    width: 255px;
 	    height: 100%;
 	}
 	#show-dates{
@@ -62,7 +62,7 @@
 
 @media(min-width: 420px){
 	#flyers img {
-	    width: 355px;
+	    width: 340px;
 	    height: 100%;
 	}
 	#show-dates{
