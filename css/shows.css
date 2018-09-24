@@ -8,6 +8,12 @@
 	text-decoration: underline !important;
 }
 
+#show-dates td a{
+	font-weight: bold;
+	color: #228b3e !important
+}
+
+
 #tix{
 	margin-top: 50px;
 }
@@ -39,11 +45,48 @@
 	    width: 280px;
 	    height: 100%;
 	}
+	#show-dates{
+		font-size: 10px;
+		margin-top: 62px;
+	}
+	#show-dates tr td:nth-child(1){
+		min-width: 52px;
+	}
+	#show-dates tr td:nth-child(2){
+		min-width: 117px;
+	}
+	#show-dates tr{
+		height: 22px;
+	}
 }
 
 @media(min-width: 420px){
 	#flyers img {
 	    width: 355px;
 	    height: 100%;
+	}
+	#show-dates{
+		font-size: 12px;
+	}
+	#show-dates tr td:nth-child(1){
+		min-width: 68px;
+	}
+	#show-dates tr td:nth-child(2){
+		min-width: 178px;
+	}
+}
+
+@media(min-width: 760px){
+	#show-dates{
+		font-size: 14px;
+	}
+	#show-dates tr td:nth-child(1){
+		min-width: 75px;
+	}
+	#show-dates tr td:nth-child(2){
+		min-width: 210px;
+	}
+	#show-dates tr{
+		height: 28px;
 	}
 }
