@@ -40,8 +40,11 @@
 
 
 @media(min-width: 0px){
+	#flyers{
+		 margin-bottom: 55px;
+	}
 	#flyers img {
-	    width: 230px;
+	    width: 200px;
 	    height: 48.66px;
 			margin: 0 auto;
 	}
@@ -80,6 +83,9 @@
 }
 
 @media(min-width: 500px){
+	#flyers{
+		 margin-bottom: 110px;
+	}
 	#show-container{
 		margin-top: -10%;
 	}
