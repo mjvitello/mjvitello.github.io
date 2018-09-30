@@ -20,6 +20,15 @@
     gtag('js', new Date());
     gtag('config', 'UA-108381604-1');
   </script>
+  <script>
+  (function(){
+    var redirect = sessionStorage.redirect;
+    delete sessionStorage.redirect;
+    if (redirect && redirect != location.href) {
+      history.replaceState(null, null, redirect);
+    }
+  })();
+</script>
 <link rel="stylesheet" href="styles.22e9dfbce416f2483b12.css"></head>
 <body>
   <rb-root></rb-root>
