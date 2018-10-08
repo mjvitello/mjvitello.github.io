@@ -52,20 +52,21 @@
       setTimeout(function() {
         loader.style.display = 'none';
         main.style.display = 'inline';
-      }, 2500);
+      }, 3200);
 
       var valueElement = document.getElementById('percent');
       var start = 0;
       var end = 100;
-      var duration  = 2000; // In milliseconds (divide by 1000 to get seconds).
-      var framerate = 80;    // In milliseconds (divide by 1000 to get seconds).
+      var duration  = 2600; // In milliseconds (divide by 1000 to get seconds).
+      var framerate = 82;    // In milliseconds (divide by 1000 to get seconds).
 
       var toAdd = ( ( end - start ) * framerate ) / duration;
 
       var interval = setInterval(function() {
         var currentValue = parseInt(valueElement.innerHTML);
-        if (currentValue >= end) {
+        if (currentValue >= end || currentValue + toAdd >= end) {
           clearInterval(interval);
+          valueElement.innerHTML = ("100");
           return;
         }
 
