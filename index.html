@@ -52,13 +52,13 @@
       setTimeout(function() {
         loader.style.display = 'none';
         main.style.display = 'inline';
-      }, 2800);
+      }, 2500);
 
       var valueElement = document.getElementById('percent');
       var start = 0;
       var end = 100;
-      var duration  = 1350; // In milliseconds (divide by 1000 to get seconds).
-      var framerate = 65;    // In milliseconds (divide by 1000 to get seconds).
+      var duration  = 2000; // In milliseconds (divide by 1000 to get seconds).
+      var framerate = 80;    // In milliseconds (divide by 1000 to get seconds).
 
       var toAdd = ( ( end - start ) * framerate ) / duration;
 
@@ -73,7 +73,6 @@
       }, framerate);
     };
     loadImg.src = "assets/img/catheaven-loader.gif";
-
   </script>
   <!--scripts-->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
